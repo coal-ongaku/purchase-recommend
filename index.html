@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>何を買うべき診断</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="choose_box">
+      <div class="app-theme">
+        <p>何を買うべき診断</p>
+      </div>
+      <div id="q_01" class="fit">
+        <p>質問1</p>
+        <ul>
+          <li>
+            <a class="btn end" data-value="none">まずはお金をかけず始めたい</a>
+          </li>
+          <li>
+            <a class="btn" href="#q_02" data-value="with-lease"
+              >必要最小限のものであれば買おうかと思っている</a
+            >
+          </li>
+          <li>
+            <a class="btn" href="#q_02" data-value="authentic"
+              >ある程度の機材を揃えたい</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="q_02" style="display: none">
+        <p>質問2</p>
+        <ul>
+          <li>
+            <a class="btn" href="#q_03" data-value="able-to-play"
+              >楽器が弾ける</a
+            >
+          </li>
+          <li>
+            <a class="btn" href="#q_03" data-value="not-play">楽器が弾けない</a>
+          </li>
+        </ul>
+      </div>
+      <div id="q_03" style="display: none">
+        <p>質問3</p>
+        <ul>
+          <li><a class="btn end" data-value="sing">自分で歌いたい</a></li>
+          <li>
+            <a class="btn" href="#q_04" data-value="passion-for-vocaloid"
+              >キャラにこだわりがあり、使いたいボカロキャラがいる</a
+            >
+          </li>
+          <li>
+            <a class="btn end" data-value="chis-a"
+              >特にこだわりはないがボカロ曲を作ってみたい</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="q_04" style="display: none">
+        <p>質問4</p>
+        <ul>
+          <li>
+            <a class="btn end" data-value="vocaloid"
+              >初音ミク・鏡音リン/レン・巡音ルカ</a
+            >
+          </li>
+          <li>
+            <a class="btn end" data-value="cevio">可不・星界などCeVIO AI</a>
+          </li>
+          <li>
+            <a class="btn end" data-value="synth-v">その他(Synth Vなど)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="studio-one-prime" class="result" style="display: none">
+      <div class="result_theme">
+        <p>おすすめは</p>
+      </div>
+      <div class="result_type0">
+        <h4>Studio One Prime</h4>
+      </div>
+      <div class="result_discription0">
+        <p>
+          30日間であれば、StudioOneを無料で機能制限なく
+          使うことができ、それを超えてからは機能制限下ではありますが使い続けることができます。
+          もししっかりやってみたいと思う場合はArtist版の購入をおすすめします。
+          また、部のPCにはStudio Oneとガレージバンドがインストールされています。
+          <a href="https://www.mi7.co.jp/products/presonus/studioone/prime/"
+            >https://www.mi7.co.jp/products/presonus/studioone/prime/</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="studio-one-artist" class="result" style="display: none">
+      <div class="result_theme">
+        <p>おすすめは</p>
+      </div>
+      <div class="result_type0">
+        <h4>Studio One Artist</h4>
+      </div>
+      <div class="result_discription0">
+        <p>
+          Studio One
+          Artist版は学割価格7000円前後とリーズナブルな価格でありながら、
+          作曲には必要十分な機能を備えたDAWです。
+          まずはこちらを購入し、金銭的な余裕ができてきたら欲しいものを随時購入していくことをおすすめします。
+          <a
+            href="https://www.musicecosystems.jp/shop/4589473713755-studio-one-6-artist-13342#attr="
+            >購入ページ</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="vocaloid-bundle" class="result" style="display: none">
+      <div class="result_theme">
+        <p>おすすめは</p>
+      </div>
+      <div class="result_type0">
+        <h4>初音ミクなどボカロバンドル</h4>
+      </div>
+      <div class="result_discription0">
+        <p>
+          初音ミク・鏡音リン/レン・巡音ルカにはStudio
+          Oneが付属するバンドル製品があり、そちらを購入するのがお得です。
+          現段階でお金を使うことに抵抗のある方は、DAW(Studio
+          One)のみ購入し、知声など無料のボカロを使用するという手もあります。
+        </p>
+      </div>
+    </div>
+
+    <div id="wants-vocalo" class="result" style="display: none">
+      <div class="result_theme">
+        <p>おすすめは</p>
+      </div>
+      <div class="result_type0">
+        <h4>欲しいボカロ</h4>
+      </div>
+      <div class="result_discription0">
+        <p>
+          欲しい音源があるならこの際買ってしまうのも手です。好きなボカロに自分の曲を歌ってもらえるんだと思って作曲することは大きなモチベに繋がります。
+          また、欲しいボカロ以外に、DAW(作曲ソフト)は最低限必ず必要になります。弊部ではStudioOneを推奨しています。
+          初音ミク・鏡音リン/レン・巡音ルカにはStudio
+          Oneが付属するバンドル製品があるので、彼女らもほしい方は検討の余地ありです。
+        </p>
+      </div>
+    </div>
+
+    <div id="audio-interface" class="result" style="display: none">
+      <div class="result_theme">
+        <p>おすすめは</p>
+      </div>
+      <div class="result_type0">
+        <h4>Studio 24c</h4>
+      </div>
+      <div class="result_discription0">
+        <p>
+          オーディオインターフェイスという機械をPCに接続すれば、歌声や楽器の音をPCのDAWソフト上に取り込むことができます。
+          Studio 24cはStudio
+          Oneも付属しており、4月30日まで学割セールを実施しているため、非常におすすめです。
+          歌を歌いたい方は、マランツのMPM-1000が安くて音質もよくおすすめです。(部室に同じものがおいてあります)
+          また、より機材を揃えたい方はモニターヘッドフォン(おすすめはMPH-MT8)やモニタースピーカーの導入も検討しましょう。
+          現段階でお金を使うことに抵抗のある方は、DAW(Studio
+          One)のみ購入し、部室のインターフェイスやマイクを使用するのも手です。
+          <a
+            href="https://www.musicecosystems.jp/shop/4589473707587-studio-24c-10282#attr="
+          >
+            Studio 24c購入ページ
+          </a>
+          <a href="https://www.musicecosystems.jp/gakuwari2023"
+            >MI7（音）楽割ページ</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="return-btn" style="display: none">
+      <a class="return" href="">もどる</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
