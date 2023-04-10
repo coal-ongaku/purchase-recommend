@@ -27,6 +27,8 @@ $(function () {
       } else {
         $("#studio-one-artist").css("display", "");
       }
+    } else if (arr.includes("authentic") && arr.includes("chis-a")) {
+      $("#studio-one-artist").css("display", "");
     } else if (arr.includes("authentic")) {
       if (arr.includes("vocaloid")) {
         $("#vocaloid-bundle").css("display", "");
